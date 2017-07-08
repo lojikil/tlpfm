@@ -27,3 +27,6 @@ wedged into something that we can enforce types + caveats + whatever at the type
 - Use Markdown for documents, and CSV for tables. Have simple viewers/editors for both.
 - "TLP::COSMIC": TLP::RED + enforced crypto + access caveats (access specific location, times, &c.).
 - CAS: Content addressed storage ala Venti/Vac, but user stores offsets (so server can't even know file name, desc, &c.)
+- Audit log: cryptographically-signed log of all actions. view, read, modification, delete, undelete, &c.
+- Deletion: probably shouldn't "delete", but rather unlink, until deletion is specifically called (garbage collect/purge).
+- Login federation: allow macaroons from other systems (woof that'll be interesting to enforce).
